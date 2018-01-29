@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<link href="http://static.youku.com/v1.0.0940/index/css/youku.css" type="text/css" rel="stylesheet" />
+<link href="http://static.youku.com/v1.0.0940/v/css/playV5.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="http://static.youku.com/v1.0.0940/js/prototype.js"></script>
+<script type="text/javascript" src="http://static.youku.com/v1.0.0940/index/js/common.js"></script>
+<script type="text/javascript" src="http://static.youku.com/v1.0.0940/v/js/v5/v.js"></script>
+<script type="text/javascript">if (!window.Nova) Nova={};
+Nova.QVideo = {
+_name : 'QVideo',
+ isNeedVerify : function(param, callback, id) { return nova_call('/QVideo/~ajax/isNeedVerify', param, callback, id); },
+ getVideoPlayInfo : function(param, callback, id) { return nova_call('/QVideo/~ajax/getVideoPlayInfo', param, callback, id); },
+ getLastVideoInfo : function(param, callback, id) { return nova_call('/QVideo/~ajax/getLastVideoInfo', param, callback, id); },
+ usertags : function(param, callback, id) { return nova_call('/QVideo/~ajax/usertags', param, callback, id); },
+ videoStatus : function(param, callback, id) { return nova_call('/QVideo/~ajax/videoStatus', param, callback, id); },
+ logon : function(param, callback, id) { return nova_call('/QVideo/~ajax/logon', param, callback, id); },
+ comment : function(param, callback, id) { return nova_call('/QVideo/~ajax/comment', param, callback, id); },
+ addFav : function(param, callback, id) { return nova_call('/QVideo/~ajax/addFav', param, callback, id); },
+ deleteComment : function(param, callback, id) { return nova_call('/QVideo/~ajax/deleteComment', param, callback, id); },
+ updown : function(param, callback, id) { return nova_call('/QVideo/~ajax/updown', param, callback, id); },
+ getPlayListAll : function(param, callback, id) { return nova_call('/QVideo/~ajax/getPlayListAll', param, callback, id); },
+ setPlayListAll : function(param, callback, id) { return nova_call('/QVideo/~ajax/setPlayListAll', param, callback, id); },
+ setPlayListRandom : function(param, callback, id) { return nova_call('/QVideo/~ajax/setPlayListRandom', param, callback, id); },
+ delPlayListById : function(param, callback, id) { return nova_call('/QVideo/~ajax/delPlayListById', param, callback, id); },
+ cleanPlayList : function(param, callback, id) { return nova_call('/QVideo/~ajax/cleanPlayList', param, callback, id); },
+ getPlayLog : function(param, callback, id) { return nova_call('/QVideo/~ajax/getPlayLog', param, callback, id); },
+ setPlayLog : function(param, callback, id) { return nova_call('/QVideo/~ajax/setPlayLog', param, callback, id); },
+ getUserDevices : function(param, callback, id) { return nova_call('/QVideo/~ajax/getUserDevices', param, callback, id); },
+ sendVideoToAPP : function(param, callback, id) { return nova_call('/QVideo/~ajax/sendVideoToAPP', param, callback, id); },
+ feePayment : function(param, callback, id) { return nova_call('/QVideo/~ajax/feePayment', param, callback, id); }
+};</script>
+<script type="text/javascript">
+var youku_video_page = 1;	var page_v5 = 1;var removePlayerSideControl = 1;
+var player_thx = 1; 
+var singerid = '0';
+var videoId = '174277861';
+var videoId2= 'XNjk3MTExNDQ0';
+var version="/v1.0.0940";
+var imgServer = 'http://static.youku.com';
+var UC_FOLLOW_HOST = "i.youku.com";
+var video_owner = '345423027';
+var tags="%E5%8E%9F%E5%88%9B|%E4%BC%98%E9%85%B7%E5%85%A8%E6%98%8E%E6%98%9F|%E5%88%98%E6%81%BA%E5%A8%81|";
+var showid="286183";
+var showid_en="bcdd8ae47dca11e3b8b7";
+var showtype="正片";
+var cp="authorized";
+var stage="20140411";
+var playmode="3";
+var videoSeconds = Math.round(963.26);
+
+var loadinglogo1 = "http://res.mfs.ykimg.com/05100000517743C66714C04A4F023605";
+var loadinglogo2 = "http://res.mfs.ykimg.com/051000005177439C6714C049520DA8F8";
+
+var space_domain ='u.youku.com';
+var nc_domain ='nc.youku.com';
+var uc_domain ='i.youku.com';
+var youku_homeurl='www.youku.com';
+var v_domain = 'v.youku.com';
+
+var adsParams = "&ct=v&cs=3038|3044&td=0&s=286183&v=174277861&u=345423027&k="+tags+""+"&sid="+window.logPvid+"&tt=准爸爸刘恺威的甜蜜生活&pu="+window.location.href+"&ref="+document.referrer;
+</script>
+<script type="text/javascript">
+var ab_ad_time=10*60*1000;
+var ab_ad1=function(){ 
+    Nova.addScript("http://vhtml.atm.youku.com/vhtml?p=863" + adsParams + "&t="+(new Date).getTime() + "&vl=" + videoSeconds); 
+    if($('ab_pip_pre'))Element.hide("ab_pip_pre"); 
+    if($("ab_863")) Element.hide("ab_863"); 
+    if(window.ab_ad1_timer) clearTimeout(window.ab_ad1_timer); 
+    window.ab_ad1_timer = setTimeout('ab_ad1()',ab_ad_time); 
+} 
+var show_pip=function(){
+	Element.show("ab_pip_pre"); Element.hide("ab_863");
+}
+</script>
+
+
+<body class="page_v">
+<script>
+
+(function(){
+var ua = window.navigator.userAgent;
+var href = window.location.href;
+var config = ['iPad','Android','iPhone','iPod'];
+try{
+	var fromx = Nova.Cookie.get("_from_x_");
+	Nova.Cookie.set("xreferrer", document.referrer);
+}catch(ex){
+	var fromx = 0;
+}
+for(var i=0; i<config.length;i++){
+	if(fromx == '1') break;
+	if(ua.indexOf(config[i]) !== -1){
+		if(href.indexOf("#") !== -1){
+			var wechat_redirect = href.split('#');
+			if(wechat_redirect.length > 1 && wechat_redirect[1].indexOf('wechat_redirect') !== -1){
+				Log.log(1, "tp=1&cp=4009242&cpp=1000752");
+			}
+			href = wechat_redirect[0];
+		}
+		if(href.indexOf('?') !== -1){
+			href += '&x';
+		}else{
+			href += '?x';
+		}
+		window.location.href = href;
+		break;
+	}
+}
+})();
+
+</script>
+    
+<script>PageAuto.init();</script>
+<div id="topBanner" style="display:none"></div>
+<script type="text/javascript">
+
+(function(){
+var topRecommend = function(){
+	var userAgent = window.navigator.userAgent;
+	if(userAgent.match(/Android/i) || userAgent.indexOf('iPod') !== -1 || userAgent.indexOf('iPad') !== -1 || userAgent.indexOf('iPhone') !== -1){
+		var cookie = Nova.Cookie.get("_top_banner_");
+		if(cookie == 1) return false; 
+		var dom = document.getElementById('topBanner');
+		var cssPlus = '';
+		if(window.screen.width < 768){
+			cssPlus = "x_topbanner_l";
+		}
+		var device = '';
+		if(userAgent.match(/Android/i)){
+			device = "Android";
+			var href = window.location.href;
+			if(href.indexOf('?') !== -1){
+				href += '&x';
+			}else{
+				href += '?x';
+			}
+			var xUrl = href;
+			var aString = '<div class="x_topbanner '+cssPlus+'"><div class="banner_skip"><div class="banner_panel"><i class="ico__info"></i><strong>ANDROID浏览时建议您：</strong><br><span>安装<a href="http://mobile.youku.com/index/wireless" target="_blank" onclick="Log.log(1,\'tp=1&cp=4007638&cpp=1000687\')">优酷客户端</a>，或访问<a href="'+xUrl+'" onclick="Nova.Cookie.set(\'_from_x_\',0,-1);Log.log(1,\'tp=1&cp=4007639&cpp=1000687\')">优酷ANDROID版</a></span></div><a title="关闭" class="btn__cls"></a></div></div>';
+			Log.log(1,"tp=1&cp=4007637&cpp=1000687");
+		}else if(userAgent.indexOf("iPad") !== -1){
+			device = "iPad";
+			var href = window.location.href;
+			if(href.indexOf('?') !== -1){
+				href += '&x';
+			}else{
+				href += '?x';
+			}
+			var xUrl = href;	
+			var aString = '<div class="x_topbanner '+cssPlus+'"><div class="banner_skip"><div class="banner_panel"><i class="ico__info"></i><strong>IPAD浏览时建议您：</strong><br><span>安装可以下载视频的<a href="http://mobile.youku.com/index/wireless" target="_blank" onclick="Log.log(1,\'tp=1&cp=4007634&cpp=1000687\')">优酷客户端</a>，或访问<a href="'+xUrl+'" onclick="Nova.Cookie.set(\'_from_x_\',0,-1);Log.log(1,\'tp=1&cp=4007635&cpp=1000687\')">优酷IPAD版</a></span></div><a title="关闭" class="btn__cls"></a></div></div>';
+			Log.log(1,"tp=1&cp=4007633&cpp=1000687");
+		}
+		else if(userAgent.indexOf("iPhone") !== -1 || userAgent.indexOf("iPod") !== -1){
+			device = "iPhone";
+			var href = window.location.href;
+			if(href.indexOf('?') !== -1){
+				href += '&x';
+			}else{
+				href += '?x';
+			}
+			var xUrl = href;	
+			var aString = '<div class="x_topbanner '+cssPlus+'"><div class="banner_skip"><div class="banner_panel"><i class="ico__info"></i><strong>IPHONE浏览时建议您：</strong><br><span>安装<a href="http://mobile.youku.com/index/wireless" target="_blank" onclick="Log.log(1,\'tp=1&cp=4007629&cpp=1000687\')">优酷客户端</a>，或访问<a href="'+xUrl+'" onclick="Nova.Cookie.set(\'_from_x_\',0,-1);Log.log(1,\'tp=1&cp=4007635&cpp=1000687\')">优酷IPHONE版</a></span></div><a title="关闭" class="btn__cls"></a></div></div>';
+			Log.log(1,"tp=1&cp=4007628&cpp=1000687");
+		}
+		dom.innerHTML = aString;
+		dom.style.display = "block";
+		var close = $$(".x_topbanner .btn__cls")[0];
+		if(close){
+			close.onclick = function(){
+				dom.style.display = "none";
+				Nova.Cookie.set("_top_banner_",1,1);
+			}
+		}
+		if(device == "Android"){
+			tp = "tp=1&cp=4007640&cpp=1000687";
+		}else if(device == "iPad"){
+			tp = "tp=1&cp=4007636&cpp=1000687";
+		}else{
+			tp = "tp=1&cp=4007632&cpp=1000687";
+		}
+		Log.log(1,tp);
+	}
+};
+})();
+
+</script>		<style type="text/css">
+
+.sidebar {display: block;opacity: 0;overflow: hidden;position: fixed;_position: absolute;z-index: 1000;right: 20px;bottom: 60px;_bottom: auto;_position: absolute;_top: expression(eval(document.documentElement.scrollTop + 300 ));width: 50px;}
+.sidebar a .sidebar-overlay{display:block;position:absolute;top:0;left:0;z-index:-1;background:#000;opacity: 0.7;filter: alpha(opacity=70);width:50px;height:50px;}
+.sidebar a{position:relative;display:block;text-align: center;height: 26px;color:white;font-size: 12px;font-family: "Microsoft YaHei","微软雅黑",SimHei,helvetica,arial,verdana,tahoma,sans-serif;padding: 12px 0;}
+.sidebar a:hover{color:#fff;}
+.sidebar a:hover .sidebar-overlay{display:block;position:absolute;top:0;left:0;z-index:-1;background:#000;opacity:0.60;filter: alpha(opacity=60);}
+.sidebar a .sidebar-on{background: #06a7e1;}
+.sidebar i{width:24px;height: 24px;display:inline-block;*display:inline;*zoom:1}
+.sidebar .ico-gotop,
+.sidebar .ico-feedback,
+.sidebar .ico-mobi,
+.sidebar .ico-qrcode,
+.sidebar .ico-lightOn,
+.sidebar .ico-lightOff {vertical-align: middle;background: url("/index/img/2013/sidebar.8.png") no-repeat;}
+.sidebar .ico-gotop{background-position: -7px -4px;height:26px;}
+.sidebar .ico-feedback{background-position: -3px -40px;}
+.sidebar .ico-lightOn{background-position: -3px -176px;}
+.sidebar .ico-lightOff{background-position: -3px -142px;}
+.sidebar .ico-mobi{background-position: -3px -74px;}
+.sidebar .feedBack{margin: 1px 0;padding: 6px 0;height: 37px;height: 38px;}
+.sidebar  .mobi{padding: 6px 0 18px;display: none;}
+.sidebar .scanQrcode{margin-top:1px;padding:7px 0;height:36px; }
+.sidebar .ico-qrcode{height:24px;vertical-align:middle;background-position:-3px -108px; }
+
+</style>
+<div class="sidebar" id="padsideTool" style="display: none;opacity: 1;">
+	<a class="feedBack" href="/x_mfeed" target="_blank" style="display: block;"><i class="ico-feedback"></i><br/><span>反馈</span><span class="sidebar-overlay"></span></a>
+	<a class="mobi" onclick="Nova.Cookie.set('_from_x_',0,-1);Log.log(1,'tp=1&cp=4007635&cpp=1000687');window.location.reload();return false;" style="display: block;"><i class="ico-mobi"></i><br/><span>移动版</span><span class="sidebar-overlay"></span></a>
+</div>
+	
+	<div class="window">
+		<div class="screen">
+			<div class="s_body">
+			<div id="dfmaxthonv5_wrap"><div id="dfmaxthonv5"></div></div>
+			<div id="copyright_tips"></div>
+			<script>
+						
+			(function(){
+				var aoutds = Array("www.soku.com");
+				var adr = document.referrer;
+				var aoutds_ua = navigator.userAgent.toLowerCase();
+				var aoutds_isFF = aoutds_ua.indexOf('firefox') >= 0;
+				var aoutds_isIE = (aoutds_ua.indexOf('msie') >= 0 && aoutds_ua.indexOf('opera') < 0);
+				var aoutds_isSFR = aoutds_ua.indexOf('safari') >= 0;
+				if(parent&&((aoutds_isIE&&parent!=document&&parent!=window)||((aoutds_isFF||aoutds_isSFR)&&parent!=window))&&adr!=""&&adr!=self.location&&top.location!=self.location){
+				  var isAOUTD = false;
+				  if(adr.indexOf(".youku.com") !== -1){
+					  isAOUTD = true;
+				  }
+				  var adrs = adr.match(/\:\/\/([\w\.\-\d]+)\//g); 
+				  for(var ai=0;ai<aoutds.length;ai++){
+					if((typeof adrs == "string" && adrs == "://"+aoutds[ai]+"/") || 
+						((typeof adrs == "object" && adrs.length>0 && adrs[0] == "://"+aoutds[ai]+"/"))){
+						isAOUTD = true;
+						break;
+					}
+				  }
+				  if(isAOUTD == false) goHome();
+				}
+				
+				function goHome(){
+					var tips = '<div style="height:32px;line-height:32px;background:#ffffe5;border:1px solid #ecdda8;color:#555;text-align:center;font-size:14px;font-family: &quot;Microsoft YaHei&quot;,&quot;微软雅黑&quot;,helvetica,arial,verdana,tahoma,sans-serif;">本网页发现未经许可被嵌套播放，为保护您的隐私不被第三方网站窃取，马上为您跳到正常网页</div>';
+					document.getElementById('copyright_tips').innerHTML = tips;
+					setTimeout(function(){top.location=self.location;},2000);
+				};
+			})();
+			
+			</script>	
+						<link href="http://static.youku.com/v1.0.0940/index/css/qheader.css" type="text/css" rel="stylesheet" />
+<script>
+var udomain = 'u.youku.com'
+,UC_DOMAIN = 'i.youku.com'
+,nc_domain ='nc.youku.com'
+,youku_index_domain = 'www.youku.com'
+,notice_domain ='http://notice.youku.com'
+,space_domain ='u.youku.com'
+,comments_domain ='http://comments.youku.com'
+,openLookingClick = '1'
+,passport = '1'
+,passport_url = 'http://passport.youku.com'
+,callback = 'videoLogin'
+,novamodule = ''
+,youku_homeurl = 'www.youku.com'
+//only for header
+,qheaderjs = {
+	relyon: [
+		{
+			src			: 'http://static.youku.com/v1.0.0940/js/prototype.js',
+			condition	: 'typeof($)=="function"',
+			ready		: false
+		},{
+			src			: 'http://static.youku.com/v1.0.0940/index/js/common.js',
+			condition	: 'typeof(login)=="function"',
+			ready		: false
+		},{
+			src			: 'http://static.youku.com/v1.0.0940/index/js/qwindow.js',
+			condition	: 'typeof(Qwindow)=="function"',
+			ready		: false
+		}
+	],
+	addons: [
+	 	{
+			src			: 'http://static.soku.com/v1.0.0713/soku/js/sk-box-open.js',
+			condition	: 'typeof(XBox)=="object"',
+			ready		: false
+		}
+	]
+};
+</script>
+<script src="http://static.youku.com/v1.0.0940/index/js/qheader.js"></script>
+<script src="http://static.youku.com/v1.0.0940/index/js/qwindow.js"></script>
+<script src="http://static.youku.com/v1.0.0940/index/js/popup.js"></script>						
+				<div class="s_main layout_121">
+					<!--标题 播放器 播放列表-->
+					                    					    <div id="vpofficialtitlev5_wrap"><div id="vpofficialtitlev5"><!--视频基本信息-->
+<div class="base">
+	<div class="base_info">
+					<div class="guide">
+    		<div class="crumbs">
+                <a href="http://zy.youku.com/" target="_blank">综艺</a>
+    			<span class="arrow"> &gt; </span>
+                                <a href="http://www.youku.com/v_olist/c_85_a_%E5%A4%A7%E9%99%86.html" target="_blank">大陆</a><span class="arrow"> &gt; </span>                                <a href="http://www.youku.com/v_olist/c_85_g_%E5%A8%B1%E4%B9%90.html" target="_blank">娱乐</a>/<a href="http://www.youku.com/v_olist/c_85_g_%E4%BC%98%E9%85%B7%E5%87%BA%E5%93%81.html" target="_blank">优酷出品</a></li>			</div>
+		</div>
+		<h1 class="title"><a charset="hz-4006554-1000595" href="http://www.youku.com/show_page/id_zbcdd8ae47dca11e3b8b7.html" target="_blank" title="优酷全明星 2014">优酷全明星 2014</a>：<span id="subtitle">刘恺威揭秘宝宝性别 20140411</span></h1>
+
+		</div>
+	<!--广告位-->
+	<div id="ab_pip" class="ad_area">
+		<div id="ab_pip_pre"></div>
+		<div id='ab_863' style="display:none"></div>
+		<div id="ab_569" style="display:none"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+<script type="text/javascript">
+var catId="85";
+var cateStr = 'p_dv00_A';
+var catName="%E7%BB%BC%E8%89%BA";
+var attrs="";
+var video_gener="娱乐|优酷出品|";
+var video_area="大陆|";
+</script></div></div>
+                    																<div class="play_area" id="playBox">
+		   <div id="div_ad_crazy_v5" style="position:absolute;top:0;left:50%;margin-left:-465px;z-index:10000;display:none"></div>
+			<div class="playBox" id="playerBox">
+				<div class="playArea">
+								<div class="abs">
+					<div id="preAd1" style="zoom:1;">
+						<div style="position:absolute;top:0px;left:610px;width:320px;height:460px;text-align:right;display:none" id="preAdContent"></div>
+					</div>
+					<div id="ad_crazy" style="zoom:1;">
+												<div id="ab_558"></div>
+											</div>
+				</div>
+			
+								<div class="player" id="player" err>
+					<script type="text/javascript">
+var playerUrl = 'http://static.youku.com/v1.0.0422/v/swf/loader.swf';
+var preId="";
+var nextId="";
+var plid="";
+var type="";
+</script>
+<div id="player_title"></div>
+<div id="player_html5" class="player_html5">
+ <div class="picture" id="youku-html5-player-info">
+  <video id="youku-html5-player-video" width="100%" height="458" x-webkit-airplay="allow" controls autoplay preload>
+  </video>
+ </div>
+ <div class="controls">
+  <div class="panel">
+  	<div id="youku-html5-player-progressbar" class="processbar">
+  	 <div id="youku-html5-player-progress-tp" class="timepoint" style="left:0%;display:none">00:00</div>
+  	 <div id="youku-html5-player-progress-trk" class="track" style="width:0%;"></div>
+  	 <div id="youku-html5-player-progress-hd" class="handle" style="left:0%"></div>
+  	</div>
+  	<div id="youku-html5-player-play" class="start_disabled"></div>
+  	<div class="time">
+  		<span id="youku-html5-player-currentTime" class="current">00:00</span>/<span id="youku-html5-player-totalTime" class="total">00:00</span>
+  	</div>
+    <div class="controls-fullscreen-button"></div>
+    <div class="base-button controls-widescreen-button"> 标屏</div>
+    <div class="controls-playmode"></div>
+    <div class="controls-language"></div>
+  	<div class="volume" id="youku-html5-player-volume">
+  	 <div class="speaker" id="youku-html5-player-speaker">
+  	 	<div class="mask">
+  	 		<div class="lose" id="youku-html5-player-speaker-lose" style="width:100%"></div>
+  	 	</div>
+  	 </div>
+  	 <div class="volumebar">
+  	 	<div class="track" id="youku-html5-player-volumebar-trk"></div>
+  	 	<div class="handle" id="youku-html5-player-volumebar-hd" style="left:0%"></div>
+  	 </div>
+  	</div>
+  </div>
+ </div>
+</div>
+<iframe id="universalPlayer" src="" width="100%" height="498" border="0" frameborder="0" style="display:none"></iframe>
+<script>
+play();
+
+
+(function(){
+
+	if(typeof(QHeader) == 'undefined'){ return; }
+	var player = $('player') || $('playBox');
+	if(!player)	{ return; }
+	
+	var getPlayerRange = function(){
+		var pos = player.cumulativeOffset();
+		return {
+			'width': player.offsetWidth,
+			'height': player.offsetHeight,
+			'top': pos[1],
+			'left': pos[0]
+		}
+	}
+	
+	var getScrollTop = function(){ return document.documentElement.scrollTop || document.body.scrollTop; }
+	
+	var h = $('qheader').offsetHeight;//页头高度
+	var unfix = false; //unfix由于动画status异步，加入标志控制
+	var offset_t = 0; //上缓冲区间
+	var offset_b = 20; //下缓冲区间	
+	
+	var controlHeader = function(){
+		var range = getPlayerRange()
+			,scrollTop = getScrollTop();
+		if(scrollTop > range.top + range.height + offset_b){
+			if(QHeader.status != 'fixed'){
+				QHeader.dofix();
+				unfix = false;
+				return true;
+			}
+			
+		}else{
+			if(!unfix){
+				QHeader.unfix();
+				unfix = true;
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	controlHeader(); //页面载入会记录滚动进度, 功能运行立即进行纠正
+	Event.observe(window, 'scroll', controlHeader);
+		  
+})();
+
+</script>				</div>
+				</div>
+			</div>
+</body>
+</html>

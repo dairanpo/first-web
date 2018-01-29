@@ -1,0 +1,128 @@
+/* CSS Document */
+body,td,th {font-size: 12px;color: #25B0B1; line-height:20px; font-family:"ËÎÌו";}
+body {background:#000;	margin: 0px;}
+img{ border:0;}
+input,ul,li,p,form{ padding:0;margin:0;font-size:12px;}
+h5,h4,h3,h2,h1{padding:0;margin:0;font-size:12px; font-weight:100;}
+ul,li{list-style:none;}
+a:link,a:visited{color:#25B0B1;text-decoration:none;}
+a:hover{color:#D30902; text-decoration: underline;}
+.red{color:#FA0F03}
+.red a:link, .red a:visited{color:#FA0F03;}
+.red a:hover{color:#f30;}
+.red1{color:#ff0000}
+.bai{color:#fff;}
+.bai a:link, .bai a:visited{color:#fff;}
+.bai a:hover{color:#ff0;}
+
+
+/* top */
+#top_w{width:100%; background:url(http://static.kunlun.com/web/qjp/images/qjp_01.jpg) no-repeat center bottom;}
+#top_navw{width:100%;background:url(http://static.kunlun.com/web/qjp/images/top.gif) no-repeat center top;text-align:left; height:auto; overflow:hidden;}
+#top_navw .top_nav{width:1000px;text-align:left;margin:auto;position:relative; top:0; left:0;}
+
+#top_w .nav{padding:55px 0 0 108px; height:100px; position:absolute;z-index:1000; top:0; left:0;}
+#top_w .nav .navlist{width:460px;height:23px; text-align:center;clear:both;display:none; margin:auto;}
+#top_w .nav .navlist a{float:left;color:#fff;width:77px;background:url(http://static.kunlun.com/web/qjp/images/2_nav1.gif) no-repeat 0 0;cursor:pointer; display:block; line-height:23px;}
+#top_w .nav .navlist a:hover{width:77px;color:#ff0;background:url(http://static.kunlun.com/web/qjp/images/2_nav1.gif) no-repeat 0 0;cursor:pointer;text-decoration:none;}
+#top_w .nav ul{clear:both;height:35px; text-align:left;}
+#top_w .nav li{float:left;width:89px;height:32px; overflow:hidden;}
+#top_w .nav .nav_down{background:url(http://static.kunlun.com/web/qjp/images/nav.gif) no-repeat;text-decoration:none;}
+#top_w .nav li img{ width:89px; height:32px; border:0; overflow:hidden}
+
+/* main */
+#main_w{width:100%; background:url(http://static.kunlun.com/web/qjp/images/bg_02.jpg) no-repeat center top #000; position:absolute; z-index:200;}
+#qjp_main{width:1000px; height:1400px;text-align:left;margin:auto;}
+#qjp_left{float:left; width:247px;background:url(http://static.kunlun.com/web/qjp/images/qjp_03.jpg) no-repeat 0 0;height:1360px; overflow:hidden;}
+#qjp_left .dl_w{padding:65px 0 0 15px; height:200px; width:206px;}
+#qjp_left .xsgl_w{padding:80px 0 0 10px; height:200px; width:214px;}
+#qjp_left .xsgl_w p{ width:66px; float:left;height:21px; padding-left:4px;}
+#qjp_left .suoyin{padding:58px 0 0 30px; height:72px;}
+#qjp_left .suoyin select{font-size:12px; width:170px;}
+#qjp_left .kfrx_w{padding:66px 0 0 26px; height:124px; line-height:18px;}
+#qjp_left .faq_w{padding:55px 0 0 20px; height:150px;}
+#qjp_left .faq_txt{ height:100px; overflow:hidden;}
+#qjp_right{float:right; width:753px;height:1360px; overflow:hidden;}
+#qjp_right .qjp_rt1{background:url(http://static.kunlun.com/web/qjp/images/qjp_04.jpg) no-repeat 0 0; height:445px; overflow:hidden;}
+#qjp_right .qjp_rt1 .rt1_left{float:left; width:524px; padding:0 0 0 10px;}
+#qjp_right .qjp_rt1 .rt1_right{float: right; width:208px;}
+#qjp_right .qjp_rt2{background:url(http://static.kunlun.com/web/qjp/images/qjp_06.jpg) no-repeat 0 0; clear:both; height:913px;overflow:hidden;}
+#qjp_right .qjp_rt2 .rt2_left{float:left; width:504px; padding:0 0 0 20px;}
+#qjp_right .qjp_rt2 .rt2_right{float: right; width:208px;}
+#qjp_right .view_w{width:512px;height:200px; }
+#qjp_right .yxzx_w{height:200px;width:460px; padding:40px 0 0 25px;}
+#qjp_right .yxzx_w .bt{ text-align:center;height:26px; padding:0px 0 0 115px;}
+#qjp_right .yxzx_w .bt li{float:left;height:26px;line-height:20px; font-weight:bold; cursor:pointer;}
+#qjp_right .yxzx_w .news_box{ padding:8px 0 0 0; line-height:24px;}
+#qjp_right .yxzx_w .news_box ul{background:none; padding:0; text-align:left;}
+#qjp_right .yxzx_w .news_box li{height:24px; float:none;line-height:20px; padding:0; font-weight:bold; cursor:default;font-weight:100;}
+#qjp_right .yxzx_w .news_box li h3{ float:left;width:380px;}
+#qjp_right .yxzx_w .news_box li p{ float:left;width:55px; text-align: right;}
+#qjp_right .xftj_w{height:160px; padding:60px 5px 0 6px;}
+#qjp_right .xftj_w .tj_font16{height:30px; font-size:16px; font-weight:bold; text-align:center; color:#FFEA00;}
+#qjp_right .xftj_w .tj_font16 a{color:#FFEA00;}
+#qjp_right .yxsp_w{height:160px; padding:50px 6px 0 2px; overflow:hidden;}
+#qjp_right .gg_box {height:128px;}
+#qjp_right .gg_box li{float:left; width:160px; height:111px; padding:10px 0px 0 3px;}
+#qjp_right .gg_box li img{ float:left}
+#qjp_right .ltjh_w{height:221px;width:425px; padding:4px 0 0 35px; }
+#qjp_right .ltjh_w .bt{ text-align:center;height:26px; padding:0px 0 0 100px;}
+#qjp_right .ltjh_w .bt li{float:left;height:26px;line-height:20px; font-weight:bold; cursor:pointer;}
+#qjp_right .ltjh_w .news_box{ padding:8px 0 0 0; line-height:24px;}
+#qjp_right .ltjh_w .news_box ul{background:none; padding:0; text-align:left;height:168px;overflow:hidden;}
+#qjp_right .ltjh_w .news_box li{height:24px; float:left; width:424px;line-height:20px; padding:0; font-weight:bold; cursor:default;font-weight:100; overflow:hidden;}
+#qjp_right .ltjh_w .news_box li h3{ float:left;width:320px;}
+#qjp_right .ltjh_w .news_box li p{ float:left;width:100px; text-align: right;}
+#qjp_right .w_17173{height:220px;width:425px; padding:3px 0 0 35px; }
+#qjp_right .w_17173 .bt{ text-align:center;height:40px; padding:0px 0 0 15px;}
+#qjp_right .w_17173 .bt li{float:left;height:26px;line-height:20px; font-weight:bold; cursor:pointer;}
+#qjp_right .fwqpg_w{height:290px;width:425px; padding:10px 0 0 35px; }
+#qjp_right .fwqpg_w .bt{ text-align:center;height:26px; padding:2px 0 0 0px;}
+#qjp_right .fwqpg_w .bt li{float:left;height:26px;line-height:20px;  cursor:pointer;}
+#qjp_right .fwqpg_w .news_box{height:200px; clear:both; padding-left:20px}
+#qjp_right .fwqpg_w .news_box table{ width:100%;}
+#qjp_right .fwqpg_w .news_box td{height:15px; line-height:15px;}
+#qjp_right .fwqpg_w .news_box th{height:18px; line-height:18px; color:#fff;}
+#qjp_right .fwqpg_w .tj_time{ color:#671500; text-align:center;}
+#qjp_right .gonghui_w{height:213px; padding:0px 5px 0 3px; }
+#qjp_right .gonghui_w .bt{ text-align:center;height:40px; padding:0px 0 0 5px; width:190px;background:url(http://static.kunlun.com/web/qjp/images/gh_bg.gif) no-repeat top right;}
+#qjp_right .gonghui_w .bt li{float:left;height:28px;line-height:20px;  cursor:pointer;}
+#qjp_right .gonghui_w .news_box{height:160px; clear:both;}
+
+#qjp_right .wjlz_w{height:260px; padding:45px 3px 0 3px; }
+#qjp_right .wjlz_w .lz_pic{height:200px;}
+#qjp_right .wjlz_w .lz_pic li{float:left; text-align:center; width:100px; height:95px;}
+#qjp_right .wjlz_w .lz_pic li h4{ color:#F6AA67; padding-top:4px;}
+#qjp_right .wjlz_w .lz_pic li h4 a:link, #qjp_right .wjlz_w .lz_pic li h4 a:visited{color:#F6AA67;}
+#qjp_right .wjlz_w .lz_pic li h4 a:hover{color:#ff0;}
+
+	.tab_down{background:url(http://static.kunlun.com/web/qjp/images/bn.gif) no-repeat 0px 0; color:#FFCC00;width:62px;height:22px; padding-top:4px}
+	.tab_down a:link, .tab_down a:visited{color:#FFCC00;}
+	.tab_down a:hover{color:#f30;text-decoration: none}
+	.tab_up{color:#F6AA67; width:62px; height:22px; padding-top:4px}
+	.tab_up a:link, .tab_up a:visited{color:#F6AA67;}
+	.tab_up a:hover{color:#f30;text-decoration: none}
+	
+	.bk_down{background:url(http://static.kunlun.com/web/qjp/images/bn.gif) no-repeat 0 -50px;color:#FFCC00;width:94px;font-size:13px;height:23px; padding-top:4px}
+	.bk_down a:link, .bk_down a:visited{color:#FFCC00;}
+	.bk_down a:hover{color:#f30;text-decoration: none}
+	.bk_up{color:#F6AA67;width:94px;font-size:13px;height:23px; padding-top:4px}
+	.bk_up a:link, .bk_up a:visited{color:#F6AA67;}
+	.bk_up a:hover{color:#f30; text-decoration: none}
+
+
+	.sever_down{background:url(http://static.kunlun.com/web/qjp/images/sever_down.gif) no-repeat 0 0;color:#280001;width:68px;height:22px; padding:3px 6px 0 0;}
+	.sever_down a:link, .sever_down a:visited{color:#280001;}
+	.sever_down a:hover{color:#f30;text-decoration: none}
+	.sever_up{background:url(http://static.kunlun.com/web/qjp/images/sever_up.gif) no-repeat 0 0;color:#280001;width:68px;height:22px; padding:3px 6px 0 0;}
+	.sever_up a:link, .sever_up a:visited{color:#280001;}
+	.sever_up a:hover{color:#f30; text-decoration: none}
+	.gh_down{ background-image:url(http://static.kunlun.com/web/qjp/images/gh_bg2.gif); background-position:0 0;width:90px;height:28px; }
+	.gh_up{height:28px;width:100px; }
+
+
+.right_gg2{padding:20px 0 0 0;}
+.right_gg2 p{ padding:3px 0px 0px 0; height:70px; text-align:right; margin:0;}
+.right_gg2 p img{border:1px solid #F5AA67;}
+.yqlj2{ clear:both;background:url(http://static.kunlun.com/web/qjp/images/yqlj_bg.jpg) no-repeat center top; padding:15px 0 0;text-align:center;width:100%; margin:auto; height:66px;}
+

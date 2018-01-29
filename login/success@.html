@@ -1,0 +1,91 @@
+<%
+'-------------------------定义clearHTMLCode函数，清除从数据库里来的html纪录-------------
+function clearHTMLCode(art_content) 
+dim reg 
+set reg = new RegExp 
+reg.Pattern = "<[^>]*>" 
+reg.Global = true 
+clearHTMLCode = reg.Replace(art_content, "") 
+end Function 
+%> 
+
+<!--------------------------------- 刷新页面缓冲  --------------------------------->
+<%    Response.Expires = -1   
+      Response.ExpiresAbsolute   =   Now()-1   
+      Response.cachecontrol   =   "no-cache"
+%>
+
+
+<style type="text/css">
+<!--
+#title {
+	position:absolute;
+	width:365px;
+	height:125px;
+	z-index:1;
+	background-image: url(../image/mbtitle.png);
+}
+.STYLE3 {font-size: 24px}
+#mulu {
+	position:absolute;
+	width:365px;
+	height:460px;
+	z-index:2;
+	top: 179px;
+}
+#loc {
+	position:absolute;
+	width:365px;
+	height:49px;
+	z-index:3;
+	left: 0px;
+	top: 128px;
+}
+.STYLE4 {
+	font-size: 36px;
+	color: #FF0000;
+}
+#picture {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+}
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:30px;
+	z-index:2;
+	left: 154px;
+	top: 304px;
+}
+-->
+</style>
+<body>
+<div id="main" style="position:absolute; width:365px; height:636px; z-index:1; left: 0px; top: 0px;">
+  <div id="title">
+    <table width="365" height="125" border="0">
+      <tr>
+        <td height="121"><span class="STYLE3"><a href="../mobile/mobile.asp">回到首页</a></span></td>
+        <td><span class="STYLE3"><a href="../2/mb.asp">教学动态</a></span></td>
+        <td><span class="STYLE3"><a href="../2/mb.asp">前沿技术</a></span></td>
+        <td><span class="STYLE3"><a href="../3/mb.asp">教学资源</a></span></td>
+        <td><span class="STYLE3"><a href="../4/mb.asp">开发资源</a></span></td>
+        <td><span class="STYLE3"><a href="../5/mb.asp">研究动态</a></span></td>
+        <td><span class="STYLE3"><a href="../6/mb.asp">在线交流</a></span></td>
+        <td><span class="STYLE3"><a href="mbperson.asp">个人信息</a></span></td>
+      </tr>
+    </table>
+    <div class="STYLE4" id="loc">
+      <div align="center">恭喜您注册成功</div>
+    </div>
+  </div>
+  <div id="mulu">
+    <div id="picture"><img src="../image/laugh.jpg" alt="o.o" width="349" height="299" /></div>
+
+
+
+    <div class="STYLE3" id="Layer1"><a href="../mobile/mobile.asp">返回首页</a></div>
+  </div>
+</div>
+</body>
